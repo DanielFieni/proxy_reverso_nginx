@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --azul: #4999b1;
+  --branco: #fff;
+  --preto: #000;
+  --azul-claro: #4999b150;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+
+  color: #fff;
+  background-color: var(--azul);
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+#formulario {
+  width: 100%;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+
+  margin-top: 2rem;
+}
+
+.form-campos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.form-itens {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.form-itens label {
+  margin-bottom: 5px;
+}
+
+.form-itens input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--azul);
+  outline: none;
+  font-size: 15px;
+  
+}
+
+.form-itens input:focus {
+  border-bottom: 2px solid var(--azul);
+}
+
+.form-botao {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#botaoInserir {
+  width: 100%;
+  color: var(--branco);
+  background-color: var(--azul);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  
+  padding: 5px;
+}
+
+#botaoInserir:hover {
+  box-shadow: 4px 4px 20px rgba(19, 37, 199, 0.185);
+}
+
+/*
+  Tabela
+*/
+
+#tabela {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  color: var(--branco);
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  color: var(--branco);
+}
+
+td {
+  color: var(--preto);
+}
+
+tr:nth-child(even) {
+  background-color: var(--azul-claro);
+}
+
+tr:nth-child(odd) {
+  background-color: var(--branco);
+}
+
+.cmpBotao {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--azul);
+  color: var(--branco);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+
+  transition: 0.2s;
+}
+
+.btn-editar {
+  background-color: transparent;
+  color: var(--preto);
+  border: 1px solid var(--azul);
+}
+
+.btn-excluir {
+  border: 1px solid var(--azul);
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+th {
+  background-color: var(--azul);
+}
